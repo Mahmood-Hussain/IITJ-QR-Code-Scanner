@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IITJ QR Code Scanner</string>
+    <string name="input_ibox_nformation">Enter your information</string>
+    <string name="qr_code_generated">QR Code Generated</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="todo">TODO</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="results_will_appear_here">Results will appear here</string>
+    <string name="textview">TextView</string>
+    <string name="scan">Scan</string>
+    <string name="here_qr_code_will_be_placed">here qr code will be placed</string>
+</resources>
