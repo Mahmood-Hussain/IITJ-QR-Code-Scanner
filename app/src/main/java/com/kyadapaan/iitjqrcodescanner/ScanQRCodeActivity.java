@@ -94,6 +94,8 @@ public class ScanQRCodeActivity extends AppCompatActivity {
                     Log.i("Decrypted QR Code: ", decryptedQRCode);
                 } catch (Exception e){
                     e.printStackTrace();
+                    String invalidCode = "INVALID CODE. NOT CREATED FROM THIS APP.";
+                    resultTextView.setText(invalidCode);
                 }
 
             }
