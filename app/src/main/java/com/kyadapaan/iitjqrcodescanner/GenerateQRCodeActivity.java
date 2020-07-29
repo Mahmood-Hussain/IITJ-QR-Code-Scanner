@@ -24,7 +24,6 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
     public class GenerateQRCodeActivity extends AppCompatActivity {
 
         private EditText inputText;
-        private Button generateCodeBtn, scanBtn;
         private ImageView QRCodeImageView;
         private TextView generatedTextView;
 
@@ -61,10 +60,10 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
             setContentView(R.layout.activity_main);
 
             inputText = findViewById(R.id.inputText);
-            generateCodeBtn = findViewById(R.id.generateCodeBtn);
+            Button generateCodeBtn = findViewById(R.id.generateCodeBtn);
             QRCodeImageView = findViewById(R.id.QRCodeImageView);
             generatedTextView = findViewById(R.id.generatedTextView);
-            scanBtn = findViewById(R.id.scanBtn);
+            Button scanBtn = findViewById(R.id.scanBtn);
 
 
 

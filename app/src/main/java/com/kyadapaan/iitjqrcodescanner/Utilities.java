@@ -97,13 +97,13 @@ class RSAEncrypt{
             // encrypt the plain text using the public key
             cipher.init(Cipher.ENCRYPT_MODE, key);
 
-            byte[] encryptedBytes = cipher.doFinal(clearText.getBytes("UTF-8"));
+            byte[] encryptedBytes = cipher.doFinal(clearText.getBytes(StandardCharsets.UTF_8));
             encryptedBase64 = new String(Base64.encode(encryptedBytes, Base64.DEFAULT));
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return encryptedBase64.replaceAll("(\\r|\\n)", "");
+        return encryptedBase64.replaceAll("([\\r\\n])", "");
     }
 
     public String Decrypt(String encryptedBase64, String privateKey) {
